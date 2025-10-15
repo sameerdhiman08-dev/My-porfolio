@@ -1,0 +1,382 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sameer dhiman | Portfolio</title>
+    <link rel="icon" type="image/png" href="https://img.icons8.com/?size=100&id=36917&format=png&color=FFFFFF">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">🌐 Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero mt-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 hero-content">
+                    <h1 class="hero-title">Sameer Dhiman</h1>
+                    <p class="hero-subtitle">Full Stack Developer & UI/UX Designer</p>
+                    <p class="mb-4">I create beautiful, functional websites and applications with clean code and
+                        intuitive user experiences.</p>
+                    <div class="d-flex flex-wrap">
+                        <a href="#portfolio" class="btn btn-primary me-3 mb-3">View My Work</a>
+                        <a href="#contact" class="btn btn-outline-primary mb-3">Contact Me</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <img src="{% static 'myphoto.jpg' %}" alt="Profile" class="profile-img rounded-circle">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <p class="lead">I am an enthusiastic beginner web developer passionate about creating clean,
+                            responsive, and user-friendly websites.</p>
+                        <p>I have a growing interest in both front-end and back-end development, with hands-on
+                            practice in HTML, CSS, JavaScript, React, and Python.</p>
+                        <p>I enjoy learning new technologies, improving my coding skills, and experimenting with
+                            creative projects. Beyond coding, I love exploring new ideas, reading tech blogs, and
+                            staying curious about the latest trends in web development.</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <ul class="list-unstyled">
+                                    <li class="mb-2"><strong><i class="fas fa-user me-2"></i>Name:</strong> Sameer
+                                        Dhiman
+                                    </li>
+                                    <li class="mb-2"><strong><i class="fas fa-envelope me-2"></i>Email:</strong>
+                                        sameerdhiman08@gmail.com</li>
+                                    <li class="mb-2"><strong><i
+                                                class="fas fa-map-marker-alt me-2"></i>Location:</strong> Solan,
+                                        Himachal Pradesh
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-6">
+                                <ul class="list-unstyled">
+                                    <li class="mb-2"><strong><i class="fas fa-graduation-cap me-2"></i>Degree:</strong>
+                                        Bachelor of Arts</li>
+                                    <li class="mb-2"><strong><i class="fas fa-briefcase me-2"></i>Freelance:</strong>
+                                        Curruntly Unvailable</li>
+                                    <li class="mb-2"><strong><i class="fas fa-chart-line me-2"></i>Experience:</strong>
+                                        Fresher</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <a href="static\Resume-2_(1)[1].pdf" class="btn btn-primary me-2"
+                                download="sameer-resume.pdf"><i class="fas fa-download me-2"></i>Download CV</a>
+                            <a href="#contact" class="btn btn-outline-primary"><i
+                                    class="fas fa-paper-plane me-2"></i>Hire Me</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section bg-dark">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <span>HTML/CSS</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <span>JavaScript</span>
+                                <span>50%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 50%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <span>Ms Office</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <span>Django</span>
+                                <span>60%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 60%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <span>Python</span>
+                                <span>50%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 50%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <span>UI/UX Design</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 70%"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+                <button class="filter-btn" data-filter="app">App Development</button>
+                <button class="filter-btn" data-filter="ui">UI/UX Design</button>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 col-lg-4 mb-4" data-category="web">
+                    <div class="project-card">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
+                            class="project-img" alt="Project 1">
+                        <div class="project-content">
+                            <h5 class="project-title">E-Commerce Website</h5>
+                            <p>A fully responsive e-commerce platform built with React and Node.js with payment
+                                integration.</p>
+                            <div class="project-tags">
+                                <span class="badge">React</span>
+                                <span class="badge">Node.js</span>
+                                <span class="badge">MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4" data-category="ui">
+                    <div class="project-card">
+                        <img src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
+                            class="project-img" alt="Project 2">
+                        <div class="project-content">
+                            <h5 class="project-title">Travel Blog Platform</h5>
+                            <p>A travel blog with interactive maps and user-generated content features.</p>
+                            <div class="project-tags">
+                                <span class="badge">Vue.js</span>
+                                <span class="badge">Firebase</span>
+                                <span class="badge">Google Maps API</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4" data-category="web">
+                    <div class="project-card">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
+                            class="project-img" alt="Project 3">
+                        <div class="project-content">
+                            <h5 class="project-title">Financial Dashboard</h5>
+                            <p>A dashboard for visualizing financial data with interactive charts and real-time updates.
+                            </p>
+                            <div class="project-tags">
+                                <span class="badge">React</span>
+                                <span class="badge">D3.js</span>
+                                <span class="badge">Python</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section bg-dark">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="row mb-5">
+
+                <!-- Location -->
+                <div class="col-md-4 mb-4">
+                    <div class="contact-info">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h5>Location</h5>
+                        <p>
+                            <a href="https://www.google.com/maps/place/Solan,+Himachal+Pradesh" target="_blank"
+                                style="text-decoration:none; color:inherit;">
+                                Solan, Himachal Pradesh
+                            </a>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Email -->
+                <div class="col-md-4 mb-4">
+                    <div class="contact-info">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h5>Email</h5>
+                        <p>
+                            <a href="mailto:sameerdhiman08@gmail.com" style="text-decoration:none; color:inherit;">
+                                sameerdhiman08@gmail.com
+                            </a>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Phone -->
+                <div class="col-md-4 mb-4">
+                    <div class="contact-info">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h5>Phone</h5>
+                        <p>
+                            <a href="tel:+919418040638" style="text-decoration:none; color:inherit;">
+                                +91 9418040638
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <h4 class="text-center mb-4">Send Me a Message</h4>
+
+                <!-- Success Message (Django) -->
+                {% if success %}
+                <div class="alert alert-success text-center" role="alert">
+                    ✅ Your message has been sent successfully!
+                </div>
+                {% endif %}
+
+                <form method="POST" action="">
+                    {% csrf_token %}
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <textarea name="message" class="form-control" rows="5" placeholder="Message"
+                            required></textarea>
+                    </div>
+
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary btn-lg px-5" >
+                            <i class="fas fa-paper-plane me-2"></i> Send Message
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="container">
+            <div class="social-links">
+                <a href="https://github.com/sameerdhiman08-dev" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/sameer-dhiman-2367b1214?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BO5wW%2FAQhSYK18ofvS2CNVQ%3D%3D"
+                    target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.facebook.com/sameer.dhiman.9047" target="_blank"><i
+                        class="fab fa-facebook"></i></a>
+                <a href="https://wa.me/919418040638" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/_sameerdhiman/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p class="mb-3">© 2025 Sameer Dhiman. All Rights Reserved.</p>
+            <p class="text-light fs-6">Designed with <i class="fas fa-heart text-danger"></i> by Sameer Dhiman</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="{% static 'js/script.js' %}"></script>
+
+</body>
+
+</html>
