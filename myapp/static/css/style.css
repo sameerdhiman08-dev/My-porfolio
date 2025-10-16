@@ -306,21 +306,21 @@ footer {
 }
 @media only screen and (max-width: 480px) {
     .profile-img {
-        width: 150px;
-        height: 150px;
+        width: 300px;
+        height: 300px;
     }
 }
 @media only screen and (min-width: 481px) and (max-width: 768px) {
     .profile-img {
-        width: 200px;
-        height: 200px;
+        width: 300px;
+        height: 300px;
     }
 }
 
 /* Tablets (Apple iPad etc) approx 769px to 1024px width */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
     .profile-img {
-        width: 250px;
-        height: 250px;
+        width: 300px;
+        height: 300px;
     }
 }
