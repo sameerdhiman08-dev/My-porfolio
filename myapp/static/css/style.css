@@ -243,9 +243,15 @@ footer {
   padding: 50px 20px 30px;
   text-align: center;
 }
-.project-img{
-    width: 100%;
+.project-img {
+    width: 100%;           /* fills the container width */
+    height: auto;          /* maintains aspect ratio */
+    max-height: 300px;     /* optional: prevents images from being too tall */
+    object-fit: cover;     /* crops excess while keeping ratio */
+    border-radius: 10px;   /* optional: rounded corners */
+    display: block;        /* removes inline spacing issues */
 }
+
 /* =======================================================
  📱 RESPONSIVE DESIGN
 ======================================================= */
