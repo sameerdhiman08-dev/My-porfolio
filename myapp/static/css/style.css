@@ -197,11 +197,18 @@ h1, h2, h3, h4, h5, h6 {
 .contact-form,
 .portfolio-filters .project-card,
 .contact-info {
-  background-color: var(--medium-dark);
+  background-color: var(--medium-dark); /* Keep dark background */
   border-radius: 15px;
   padding: 25px;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+
+  /* Gradient text */
+  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+  -webkit-background-clip: text;
+   background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
+
 
 /* =======================================================
  📊 PROGRESS BARS
