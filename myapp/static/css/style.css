@@ -287,7 +287,7 @@ footer {
 
   .profile-img {
     width: 300px;
-    height: 300px;
+    height: 200px;
   }
 
   .about-content,
@@ -307,13 +307,13 @@ footer {
 @media only screen and (max-width: 480px) {
     .profile-img {
         width: 300px;
-        height: 300px;
+        height: 200px;
     }
 }
 @media only screen and (min-width: 481px) and (max-width: 768px) {
     .profile-img {
         width: 300px;
-        height: 300px;
+        height: 200px;
     }
 }
 
