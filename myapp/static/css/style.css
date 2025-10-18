@@ -19,7 +19,12 @@ body {
   margin: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
 }
@@ -243,13 +248,26 @@ footer {
   padding: 50px 20px 30px;
   text-align: center;
 }
+
+footer a:hover {
+  color: var(--primary-color);
+  transform: scale(1.2);
+  transition: all 0.3s ease;
+}
+
 .project-img {
-    width: 100%;           /* fills the container width */
-    height: auto;          /* maintains aspect ratio */
-    max-height: 300px;     /* optional: prevents images from being too tall */
-    object-fit: cover;     /* crops excess while keeping ratio */
-    border-radius: 10px;   /* optional: rounded corners */
-    display: block;        /* removes inline spacing issues */
+  width: 100%;
+  /* fills the container width */
+  height: auto;
+  /* maintains aspect ratio */
+  max-height: 300px;
+  /* optional: prevents images from being too tall */
+  object-fit: cover;
+  /* crops excess while keeping ratio */
+  border-radius: 10px;
+  /* optional: rounded corners */
+  display: block;
+  /* removes inline spacing issues */
 }
 
 /* =======================================================
@@ -304,23 +322,25 @@ footer {
     font-size: clamp(1.4rem, 5vw, 2rem);
   }
 }
+
 @media only screen and (max-width: 480px) {
-    .profile-img {
-        width: 300px;
-        height: 200px;
-    }
+  .profile-img {
+    width: 300px;
+    height: 200px;
+  }
 }
+
 @media only screen and (min-width: 481px) and (max-width: 768px) {
-    .profile-img {
-        width: 300px;
-        height: 200px;
-    }
+  .profile-img {
+    width: 300px;
+    height: 200px;
+  }
 }
 
 /* Tablets (Apple iPad etc) approx 769px to 1024px width */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
-    .profile-img {
-        width: 300px;
-        height: 300px;
-    }
+  .profile-img {
+    width: 300px;
+    height: 300px;
+  }
 }
