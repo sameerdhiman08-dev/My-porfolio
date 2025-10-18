@@ -28,11 +28,11 @@ import dj_database_url  # ✅ for Render DB config
 SECRET_KEY =os.environ.get('SECRET_KEY', 'fallback-secret-key')
 
 # DEBUG
-DEBUG = os.environ.get('DEBUG', 'False') == 'True'
+DEBUG = False
 
 # ALLOWED_HOSTS
-ALLOWED_HOSTS = ['*']
-CSRF_TRUSTED_ORIGINS = ['https://my-porfolio-pbdi.onrender.com']
+ALLOWED_HOSTS = ['my-porfolio-pbdi.onrender.com']
+
 
 # Application definition
 
